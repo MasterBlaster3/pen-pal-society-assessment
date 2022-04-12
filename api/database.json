@@ -1,10 +1,27 @@
 {
-    "pals": [
+    "pals": [{
+        "id": 1,
+        "name": "",
+        "email": ""
+    }
     ],
-    "letters": [
+    "letters": [{
+        "id": 2,
+        "letter-body": "",
+        "sender": "",
+        "receiver": "",
+        "date-sent": ""
+    }
     ],
-    "topics": [
+    "topics": [{
+        "id": 3,
+        "topic-label": ""
+    }
     ],
-    "lettertopics": [
+    "lettertopics": [{
+        "id": 4,
+        "letter": "",
+        "topic": ""
+    }
     ]
 }
