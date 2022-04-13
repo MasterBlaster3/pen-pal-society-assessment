@@ -1,6 +1,11 @@
+import { getLetters } from "./DataManager.js";
+import { letterElement } from "./LetterCard.js";
+
 export const showLetterList = () => {
-  const letterElement = document.querySelector("#letterList");
+  const postElement = document.querySelector(".showLetterList");
   getLetters().then((allLetters) => {
-    letterElement.innerHTML = LetterList(allLetters);
+    for (const letter in allLetters) {
+      postElement.innerHTML += letterElement(letter);
+    }
   });
 };

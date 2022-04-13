@@ -33,16 +33,17 @@
   ],
   "letters": [
     {
-      "id": 1,
-      "letter-body": "",
-      "sender": "",
-      "receiver": "",
-      "date-sent": ""
+      "recipient": "Luke",
+      "author": "Derick",
+      "body": "Wows",
+      "date": "1242-02-04",
+      "id": 1
     },
     {
       "recipient": "Lee",
       "author": "Derick",
       "body": "Wows",
+      "date": "1754-02-04",
       "id": 2
     },
     {
@@ -51,7 +52,15 @@
       "body": "Date test",
       "date": "1224-02-04",
       "id": 3
+    },
+    {
+      "recipient": "Chris",
+      "author": "Derick",
+      "body": "Looks like I've got date working! Mostly.",
+      "date": "4221-12-24",
+      "id": 4
     }
+    
   ],
   "topics": [
     {

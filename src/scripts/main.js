@@ -1,9 +1,10 @@
 // import { LetterCard } from "./LetterCard.js"
-import { createLetter } from "./DataManager.js";
+import { getLetters } from "./DataManager.js";
 import { buildForm, author } from "./Form.js";
+import { showLetterList } from "./LetterList.js";
 
 document.addEventListener("click", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   if (event.target.id === "send-button") {
     const postObj = {
       recipient: document.querySelector("#recipient").value,
@@ -17,5 +18,17 @@ document.addEventListener("click", (event) => {
   }
 });
 
+export const getMyPosts = () => {
+  const usersId = getLoggedInUser().id;
+  return fetch(`http://localhost:8088/letters`)
+    .then((response) => response.json())
+    .then((parsedResponse) => {
+      console.log("data with user", parsedResponse);
+      postCollection = parsedResponse;
+      return parsedResponse.reverse();
+    });
+};
+
 buildForm();
 author();
+showLetterList();
