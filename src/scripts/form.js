@@ -48,6 +48,9 @@ export const buildForm = () => {
         <div class="recipient">
         <label for="recipient">Recipient</label>
         <select name="recipient" id="recipient"></select>
+
+        <label for="dateSent">Pen Pal Letter Date:</label>
+        <input type="date" name="dateSent" id="dateSent">
         
         <label for="Send Letter"></label><br>
         <input type="submit" value="Send Letter" class="button" id="send-button"><br>
