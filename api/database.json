@@ -1,27 +1,78 @@
 {
-    "pals": [{
-        "id": 1,
-        "name": "",
-        "email": ""
+  "pals": [
+    {
+      "id": 1,
+      "name": "Luke",
+      "email": "young@giant.com"
+    },
+    {
+      "id": 2,
+      "name": "Lee",
+      "email": "doyoueven@frisbee.com"
+    },
+    {
+      "id": 3,
+      "name": "Vishal",
+      "email": "cultivating@cults.com"
+    },
+    {
+      "id": 4,
+      "name": "Chris",
+      "email": "art@fursale.com"
+    },
+    {
+      "id": 5,
+      "name": "Derick",
+      "email": "git@gud.com"
     }
-    ],
-    "letters": [{
+  ],
+  "letters": [
+    {
+      "id": 1,
+      "letter-body": "",
+      "sender": "",
+      "receiver": "",
+      "date-sent": ""
+    },
+    {
+      "recipient": "Lee",
+      "author": "Derick",
+      "body": "Wows",
+      "id": 2
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "topic-label": "Business"
+    },
+    {
+      "id": 2,
+      "topic-label": "Friendly"
+    },
+    {
+      "id": 3,
+      "topic-label": "Family"
+    },
+    {
+      "id": 4,
+      "topic-label": "Congratulations"
+    },
+    {
+      "id": 5,
+      "topic-label": "Condolences"
+    }
+  ],
+  "lettertopics": [
+    {
+      "id": 1,
+      "letterId": "1",
+      "topicId": "1"
+    },
+    {
         "id": 2,
-        "letter-body": "",
-        "sender": "",
-        "receiver": "",
-        "date-sent": ""
+        "letterId": "1",
+        "topicId": "2"
     }
-    ],
-    "topics": [{
-        "id": 3,
-        "topic-label": ""
-    }
-    ],
-    "lettertopics": [{
-        "id": 4,
-        "letter": "",
-        "topic": ""
-    }
-    ]
+  ]
 }

@@ -1,19 +1,21 @@
-import { PenPal } from "./PenPal.js"
-import { LetterTopics } from "./LetterTopics.js"
-import { Letters } from "./Letters.js"
-import { Topics } from "./Topics.js"
-
+// import { LetterCard } from "./LetterCard.js"
+import { createLetter } from "./DataManager.js";
+import { buildForm , author } from "./Form.js"
 
 
 document.addEventListener("click", (event) => {
-    if (event.target.id === "letterSubmit") {
+    event.preventDefault()
+    if (event.target.id === "send-button") {
       const postObj = {
-        date: document.querySelector("#letterRecipient").value,
-        concept: document.querySelector("#letterTopics").value,
-        entry: document.querySelector("#letterAuthor").value,
-        mood: document.querySelector("#letterBody").value,
+        recipient: document.querySelector("#recipient").value,
+        // topic: document.querySelector("#topics").value,
+        author: document.querySelector("#author").value,
+        body: document.querySelector("#letterEntry").value
       };
-      
-    DataManager.createLetter(postObj);
-    renderLetter.renderLetters();
-  });
+      console.log(postObj)
+      createLetter(postObj)  
+  }})
+
+
+buildForm()
+author()
