@@ -66,9 +66,9 @@ export const author = () => {
   //grabbing html element with id of author
   let author = document.querySelector("#author");
   //writing author to the DOM
-  author.innerHTML = `<option>Author</option>`;
+  author.innerHTML = `<option>Choose Author...</option>`;
   let recipient = document.querySelector("#recipient");
-  recipient.innerHTML = `<option>Recipient</option>`;
+  recipient.innerHTML = `<option>Choose Recipient...</option>`;
   //calling getPals and used .then as it's asynchronous, passing palsArr into an anonymous function to be able to populate the dropdown selector in the letter form
   getPals().then((palsArr) => {
     for (const authorObj of palsArr) {
